@@ -41,35 +41,35 @@ puts 'Seeding the database...'
  end
 
 {
-  company_name: 'Catarse',
+  company_name: 'Valorize.me',
   company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
-  host: 'catarse.me',
-  base_url: "http://catarse.me",
+  host: 'valorizeme.com.br',
+  base_url: "http://valorizeme.com.br",
 
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
-  facebook_url: "http://facebook.com/catarse.me",
-  facebook_app_id: '173747042661491',
-  twitter_url: 'http://twitter.com/catarse',
-  twitter_username: "catarse",
-  mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
+  email_contact: 'contatovalorize@gmail.com',
+  email_payments: 'contatovalorize@gmail.com',
+  email_projects: 'contatovalorize@gmail.com',
+  email_system: 'contatovalorize@gmail.com',
+  email_no_reply: 'no-reply@valorizeme.com.br',
+  facebook_url: "http://facebook.com/valorizeme",
+  facebook_app_id: '717080581706153',
+  twitter_url: 'http://twitter.com/valorizeme',
+  twitter_username: "valorizeme",
+  mailchimp_url: "http://valorize.us9.list-manage.com/subscribe?u=687c6af96086e6890182cf8ef&id=f99d920613",
   catarse_fee: '0.13',
-  support_forum: 'http://suporte.catarse.me/',
-  base_domain: 'catarse.me',
+  support_forum: 'http://valorizeme.uservoice.com/',
+  base_domain: 'valorizeme.com.br',
   uservoice_secret_gadget: 'change_this',
   uservoice_key: 'uservoice_key',
-  faq_url: 'http://suporte.catarse.me/',
-  feedback_url: 'http://suporte.catarse.me/forums/103171-catarse-ideias-gerais',
-  terms_url: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso',
-  privacy_url: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade',
-  about_channel_url: 'http://blog.catarse.me/conheca-os-canais-do-catarse/',
-  instagram_url: 'http://instagram.com/catarse_',
-  blog_url: "http://blog.catarse.me",
-  github_url: 'http://github.com/catarse',
-  contato_url: 'http://suporte.catarse.me/'
+  faq_url: 'http://valorizeme.uservoice.com/',
+  feedback_url: 'http://valorizeme.uservoice.com/',
+  terms_url: 'http://valorizeme.uservoice.com/',
+  privacy_url: 'http://valorizeme.uservoice.com/',
+  about_channel_url: 'http://valorizeme.uservoice.com/',
+  instagram_url: 'http://instagram.com/valorizeme',
+  blog_url: "http://blog.valorizeme.com.br",
+  github_url: 'http://github.com/engageis/valorize.me',
+  contato_url: 'http://valorizeme.uservoice.com/'
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
@@ -85,8 +85,8 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = 'your_facebook_app_key'
-  o.secret = 'your_facebook_app_secret'
+  o.key = '717080581706153'
+  o.secret = '27c0109dd0e6fb595efe28a9771ea3a5'
   o.path = 'facebook'
 end
 
