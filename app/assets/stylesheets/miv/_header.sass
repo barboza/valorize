@@ -11,15 +11,14 @@ $orange: #F69219
   display: inline-block
   width: 100%
   background: #fff
-  padding: 1em 0
   border-bottom: 1px solid $border-gray
   .logo
     background: url("/assets/valorizeme_bootstrap/logo_valorizeme_header.png")
     display: block
     float: left
-    height: 90px
+    height: 110px
     text-indent: -9999em
-    width: 151px
+    width: 185px
     transition: 0.4s all
     &:hover
       opacity: 0.5
@@ -27,6 +26,8 @@ $orange: #F69219
 .header-nav
   float: right
   text-align: right
+  bottom: 20px
+  margin-top: 45px
   .header-nav-li
     display: inline-block
     margin: 0 0 0 15px
@@ -41,8 +42,16 @@ $orange: #F69219
     font-weight: bold
     font-size: 15px
   .header-nav-item
-    color: $blue-two
+    color: $light-gray
     font-size: 13px
+  .header-nav-sign-in
+    color: $dark-purple
+    font-size: 13px
+  .header-nav-sign-up
+    color: white
+    font-size: 13px
+    background-color: $green-one
+    padding: 5px
   .locales
     font-size: 13px
     a
@@ -69,7 +78,7 @@ $orange: #F69219
 .discover-form
   position: relative
   margin: 6px 0 6px
-  width: 220px
+  width: 140px
   height: 36px
   .discover-form-input
     +border-radius(3px)
@@ -79,7 +88,7 @@ $orange: #F69219
     position: absolute
     top: 0
     left: 0
-    width: 190px
+    width: 110px
     border: 1px $minimal_gryn solid
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif
     font-size: 13px

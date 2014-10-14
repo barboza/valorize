@@ -8,9 +8,10 @@ pt:
       profile: Meus dados
       projects: Meus projetos
       signin: Login
-      signup: Cadastre-se
-      submit: Comece seu projeto
+      signup: Registre-se
+      submit: Cadastre seu projeto
       search: Busque projetos
+      team: Quem Somos
     login:
       login_with_facebook: entre com sua conta do facebook
     user:

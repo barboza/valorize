@@ -4,6 +4,11 @@
 #page_content
   .container
     .main
+      section.how_it_works
+        header
+          h2.list-title
+            = link_to t('.sections.how_it_works.title'), CatarseSettings[:support_forum]
+
       - if current_user && @projects_near.present?
         section.near_projects.list
           header

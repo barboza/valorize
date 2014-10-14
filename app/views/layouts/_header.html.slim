@@ -8,7 +8,7 @@ header.header
           = link_to t('.submit'), start_path, :class => 'project'
 
         li.header-nav-li
-          = link_to t('.discover'), explore_path, :class => 'project'
+          = link_to t('.search'), explore_path, :class => 'project'
 
         li.header-nav-li.search
           = form_tag explore_path, :method => 'GET', :class=>'discover-form' do
@@ -16,7 +16,7 @@ header.header
             = submit_tag
 
         li.header-nav-li
-          = link_to t('.help'), CatarseSettings[:support_forum], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if CatarseSettings[:support_forum].present?
+          = link_to t('.team'), about_path(), target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if CatarseSettings[:support_forum].present?
 
         li.header-nav-li
           = link_to t('.blog'), CatarseSettings['blog_url'], target: :_blank, class: 'header-nav-item' if CatarseSettings['blog_url'].present?
@@ -43,7 +43,7 @@ header.header
               li.divider= link_to t('layouts.user.logout'), destroy_user_session_path, method: :delete
         - else
           li.header-nav-li
-            = link_to t('.signup'), new_user_registration_url, :class => 'header-nav-item'
+            = link_to t('.signup'), new_user_registration_url, :class => 'header-nav-sign-up'
           li.header-nav-li
-            = link_to t('.signin'), new_user_session_url, :class => 'header-nav-item'
+            = link_to t('.signin'), new_user_session_url, :class => 'header-nav-sign-in'
 .clearfix

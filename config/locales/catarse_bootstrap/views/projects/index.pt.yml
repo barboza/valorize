@@ -27,6 +27,8 @@ pt:
         buttons:
           newsletter: Enviar
       sections:
+        how_it_works:
+          title: 'Como funciona?'
         near:
           title: 'Próximos a mim'
         recommended:

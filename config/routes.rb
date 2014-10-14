@@ -27,6 +27,7 @@ Catarse::Application.routes.draw do
 
 
   get '/thank_you' => "static#thank_you"
+  get '/about' => 'static#about'
 
 
   check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
