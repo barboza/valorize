@@ -4,27 +4,20 @@
 #page_content
   .container
     .main
-      section.how_it_works
+      section.how_it_works.list
         header
           h2.list-title
             = link_to t('.sections.how_it_works.title'), CatarseSettings[:support_forum]
-
-      - if current_user && @projects_near.present?
-        section.near_projects.list
-          header
-            h2.list-title
-              = link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + current_user.address_state
-            = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + current_user.address_state, class: "more-projects"
-          .projects
-            == render @projects_near
-
-      section.selected_projects.list
-        header
-          h2.list-title
-            = link_to t('.sections.recommended.title'), explore_path(anchor: :recommended)
-          = link_to t('.links.recommended'), explore_path(anchor: :recommended), class: "more-projects"
         .projects
-          == render @recommends
+
+      /- if current_user && @projects_near.present?
+        /section.near_projects.list
+          /header
+            /h2.list-title
+              /= link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + current_user.address_state
+            /= link_to t('.links.near'), explore_path(anchor: "near_of/" ) + current_user.address_state, class: "more-projects"
+          /.projects
+            /== render @projects_near
 
       section.expiring_projects.list
         header
@@ -41,6 +34,15 @@
           = link_to t('.links.recents'), explore_path(anchor: :recent), class: "more-projects"
         .projects
           == render @recent
+
+
+      section.selected_projects.list
+        header
+          h2.list-title
+            = link_to t('.sections.recommended.title'), explore_path(anchor: :recommended)
+          = link_to t('.links.recommended'), explore_path(anchor: :recommended), class: "more-projects"
+        .projects
+          == render @recommends
 
     aside.main-sidebar
       section.main-sidebar-division
@@ -64,7 +66,7 @@
         .fb-like-box data-href="#{CatarseSettings['facebook_url']}" data-width="200" data-height="300" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"
 
 
-      section.main-sidebar-division
-        = link_to t('.sidebar.titles.twitter'), "https://twitter.com/#{CatarseSettings['twitter_username']}", class: 'twitter-timeline', data:{widget_id:"375343843308089345", chrome:"nofooter"}
+      /section.main-sidebar-division
+        /= link_to t('.sidebar.titles.twitter'), "https://twitter.com/#{CatarseSettings['twitter_username']}", class: 'twitter-timeline', data:{widget_id:"375343843308089345", chrome:"nofooter"}
 
     .clearfix

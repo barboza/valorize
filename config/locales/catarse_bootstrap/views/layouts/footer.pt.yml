@@ -2,10 +2,11 @@ pt:
   layouts:
     footer:
       links:
+        about: Quem somos
         blog: Blog
         contact: Contato
-        discover: Descubra projetos
-        expiring: Na reta final
+        discover: Busque projetos
+        expiring: Últimos dias
         facebook: Facebook
         faq: Ajuda
         feedback: Feedback
@@ -14,7 +15,7 @@ pt:
         near: Próximos a mim
         press: Imprensa
         privacy: Privacidade
-        recents: Recentes
+        recents: Projetos novos
         recommended: Recomendados
         submit: Envie seu projeto
         terms: Termos de uso

@@ -11,9 +11,9 @@ pt:
       banner: "Conheça a pesquisa"
       links:
         channels: "Descubra o Canal Asas"
-        recommended: "Descubra projetos recomendados"
-        expiring: "Descubra projetos na reta final"
-        recents: "Descubra projetos recentes"
+        recommended: "Encontre mais projetos recomendados"
+        expiring: "Encontre mais projetos em seus últimos dias"
+        recents: "Encontre mais projetos novos"
         near: "Descubra projetos perto de você"
       sidebar:
         titles:
@@ -32,11 +32,11 @@ pt:
         near:
           title: 'Próximos a mim'
         recommended:
-          title: 'Recomendados'
+          title: 'Projetos Recomendados'
         expiring:
-          title: "Na reta final"
+          title: "Últimos dias"
         recents:
-          title: "Recentes"
+          title: "Projetos novos"
         channels:
           title: 'Canal Asas'
 
