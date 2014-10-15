@@ -16,6 +16,8 @@ body
       padding: 0 10px 0 10px
       background: white
       margin-bottom: 40px
+      .how_it_works
+        +grid(16)
       .main
         padding-top: 17px
         +grid(12)
@@ -26,10 +28,17 @@ body
       .list
         float: left
 
+      .check-title
+        background: url("/assets/valorizeme_bootstrap/check_.png") no-repeat left top
+        padding-left: 28px
+        height: 30px
+        margin-left: -28px
+
       .list-title
         float: left
         min-width: 103px
         height: 30px
+        margin-top: 5px
         a
           font-family: Helvetica Neue, Helvetica, Arial, sans-serif
           color: $dark-purple
@@ -58,6 +67,28 @@ body
         padding-top: 15px
         margin-bottom: 20px
         width: 700px
+
+    .how-it-works
+      margin-left: 20px
+      margin-top: 25px
+      +grid-system(15)
+      .section
+        text-align: center
+        +grid(5)
+        p
+          margin-top: 30px
+          padding: 10px 40px
+          font-size: .9em
+          color: darken($purple, 20%)
+      .info-link
+        margin: 10px 0
+        font-size: 0.9em
+        color: $light-gray
+        +grid(16)
+        text-align: right
+        b
+          color: black
+
 
   #logos
     +grid-container

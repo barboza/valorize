@@ -9,8 +9,8 @@
   .padding
     h4.title    = link_to truncate(project.name, length: 50, separator: ''), project_by_slug_path(project.permalink), title: project.name, target: target
     p.headline  = link_to truncate(project.headline, length: 140), project_by_slug_path(project.permalink), title: project.headline, target: target
-  .status
-    .padding
+  .padding
+    .status
       p.progress-percent = t('.progress_html', percent: project.progress)
       .progress-bar = project.progress_bar
       = link_to(project_by_slug_path(project.permalink), target: target, title: project.name, class: 'time-remaining') do

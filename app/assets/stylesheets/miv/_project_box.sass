@@ -55,13 +55,13 @@ $purple: #AAA7CE
     font-weight: 400
     height: 70px
     a
-      color: $light-gray
+      color: darken($light-gray, 10%)
 
   .status
-    border-top: 1px solid rgba(0, 0, 0, 0.1)
+    border-top: 2px solid $purple
     bottom: 0px
     position: absolute
-    width: 100%
+    width: 88%
     background: $light-purple
     color: $purple
     span
@@ -71,7 +71,7 @@ $purple: #AAA7CE
     font-size: .6em
     text-transform: uppercase
     vertical-align: middle
-    margin: 0 0 .8em
+    margin: 5px 0 .8em
     span
       font-weight: bold
       font-size: 1.4em
@@ -85,7 +85,7 @@ $purple: #AAA7CE
       border-radius: 6px
       box-shadow: inset 0 0 4px lighten(gray, 15%)
     #progress
-      background: $purple
+      background: white
       +background-image(linear-gradient(0deg,lighten($purple, 5%) 0%,$purple 1%,lighten($purple, 5%) 100%,lighten($purple, 15%) 100%))
 
   .time-remaining, .money-raised
