@@ -1,6 +1,7 @@
 $green-one: #00B22D
 $blue-one: #3F4752
 $blue-two: #79808B
+$purple: #AAA7CE
 
 .project
   position: relative
@@ -19,6 +20,7 @@ $blue-two: #79808B
   float: left
   width: 220px
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  background-color: $light-purple
   &:nth-child(3n+0)
     margin: 0 0 1.5em 0
 
@@ -37,7 +39,7 @@ $blue-two: #79808B
     margin: .4em 0
     line-height: 1.1em
     a
-      color: $blue-one
+      color: $gray-purple
       font-weight: bold
       font-size: 0.95em
       &:hover
@@ -53,17 +55,17 @@ $blue-two: #79808B
     font-weight: 400
     height: 70px
     a
-      color: $blue-two
+      color: $light-gray
 
   .status
     border-top: 1px solid rgba(0, 0, 0, 0.1)
     bottom: 0px
     position: absolute
     width: 100%
-    background: #F8F8F8
-    color: $blue-two
+    background: $light-purple
+    color: $purple
     span
-      color: $blue-one
+      color: $gray-purple
 
   .progress-percent
     font-size: .6em
@@ -79,25 +81,26 @@ $blue-two: #79808B
 
   .progress-bar
     #progress_wrapper, #progress
-      height: .4em
+      height: .5em
       border-radius: 6px
       box-shadow: inset 0 0 4px lighten(gray, 15%)
     #progress
-      background: $green-one
-      +background-image(linear-gradient(0deg,lighten($green, 5%) 0%,$green 1%,lighten($green, 5%) 100%,lighten($green, 15%) 100%))
+      background: $purple
+      +background-image(linear-gradient(0deg,lighten($purple, 5%) 0%,$purple 1%,lighten($purple, 5%) 100%,lighten($purple, 15%) 100%))
 
   .time-remaining, .money-raised
     float: left
     padding: 1em 0
     text-transform: uppercase
     font-size: .6em
-    color: $blue-two
+    color: $purple
     span
       display: block
       font-weight: bold
       font-size: 1.4em
       text-transform: none
       margin-bottom: .2em
+      color: $gray-purple
 
   .money-raised
     float: right
