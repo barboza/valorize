@@ -36,13 +36,13 @@
         +grid(9)
         +omega
         h1
-          color: $ultra_gryn
+          color: $dark-purple
           font-size: 28px
           font-family: 'Lato'
           font-weight: 700
           padding: 4px 0 10px
         h4
-          color: $ultra_gryn
+          color: $gray-purple
           font-size: 16px
           font-family: Arial
           line-height: 140%
@@ -132,16 +132,24 @@
   #social_info
     margin-top: 20px
   .user_data
+    input, textarea
+      border-color: $blue-bell
+      border-radius: 10px
     h1
-      color: #333333
+      color: $dark-purple
       font-family: Lato
-      font-style: italic
       font-size: 24px
-      margin-top: 20px
+      font-weight: 700
+      margin: 20px 0
       letter-spacing: -1px
+    .hint
+      font-size: 0.95em
+      font-style: normal
+      font-weight: lighter
+      margin-top: 20px !important
     ul
       padding-top: 20px
-      border-bottom: 1px dotted #ccc
+      border-bottom: 1px solid $blue-bell
       font-family: Lato
       li
         font-family: Lato
@@ -160,14 +168,15 @@
               background-color: #F5F5F5
               background-repeat: repeat-x
               border-color: #CCCCCC #CCCCCC #B3B3B3
-              +border-radius (4px)
+              +border-radius (8px)
               border-style: solid
               border-width: 1px
-              color: #333333
+              color: #666666
               cursor: pointer
               display: inline-block
               font-size: 13px
-              line-height: 18px
+              font-weight: bold
+              line-height: 22px
               margin-bottom: 0
               padding: 4px 10px
               text-align: center
@@ -264,7 +273,7 @@
             font-size: 14px
             line-height: 18px
             a
-              color: #99c7d9
+              color: $blue-bell
               text-decoration: none
               font-family: Lato
               +transition(all, 0.5s)
@@ -277,9 +286,5 @@
               float: left
   #change_password
     ul
-      .hint
-        padding: 0px!important
-        margin-bottom: 15px
-        display: block
       .btn
         margin-top: 23px
