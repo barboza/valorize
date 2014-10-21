@@ -47,10 +47,10 @@
           font-family: "Lato"
           font-style: italic
           font-size: 18px
-          color: $pink
+          color: $dark-purple
           text-shadow: 1px 1px white
         a
-          color: $pink
+          color: $dark-purple
           text-decoration: none
           &:hover
             text-decoration: underline
@@ -116,7 +116,7 @@
       padding-top:  40px
       padding-bottom: 40px
       h1
-        color: #333
+        color: $dark-purple
         font-family: "Lato"
         font-weight: 700
         font-size: 24px
@@ -124,9 +124,10 @@
       h4
         color: rgba($ultra_gryn, 0.7)
         font-family: Arial
-        font-size: 16px
+        font-size: 14px
         a
-          color: $pink
+          font-weight: bold
+          color: $dark-purple
           text-decoration: none
           &:hover
             text-decoration: underline
@@ -278,7 +279,7 @@
               font-size: 18px
               margin-bottom: 12px
             .user_email
-              color: $pink
+              color: $dark-purple
               font-family: "Arial"
               font-size: 12px
               margin-top: 10px
@@ -317,10 +318,11 @@
             text-indent: -9999em
             height: 15px
             font-family: 'Lato'
-            font-size: 12px
+            font-size: 13px
+            font-weight: bold
             &.email
               width: auto
-              color: $pink
+              color: $dark-purple
               margin-left: 5px
               text-indent: 0px
               text-decoration: none
@@ -344,7 +346,7 @@
           &.sortable:hover
             cursor: pointer
           &.clickable:hover
-            background: rgba($light_green, 0.3)
+            background: rgba($purple, 0.3)
           .btn-danger
             margin-top: 20px
           .edit_reward
@@ -383,7 +385,7 @@
             margin-left: 0px
           .reward_deliver_at
             p
-              color: $pink
+              color: $dark-purple
           .reward_updated_at
             p
               color: $blue
@@ -456,12 +458,13 @@
               font-family: "Lato"
               font-weight: 700
               font-size: 36px
-              color: #444
+              color: $dark-gray
               text-shadow: 1px 1px white
             em
+              font-style: normal
               font-family: "Lato"
-              font-size: 14px
-              color: #444
+              font-size: 13px
+              color: $dark-gray
               text-shadow: 1px 1px white
             &.contributions
               background: url($images_path+"sidebar_contributions_icon26x19.png") left center no-repeat
@@ -489,8 +492,7 @@
             line-height: 130%
             font-family: Arial
             font-size: 12px
-            font-style: italic
-            color: #666666
+            color: $dark-purple
             text-shadow: 1px 1px white
         #pledge
           width: 280px
@@ -499,21 +501,19 @@
           padding-bottom: 20px
           input[type="submit"][disabled="disabled"]
             +opacity(0.6)
-            background: url($images_path+"submit_back_icon25x22.png") 20px center no-repeat $ultra_gryn
+            background: $light-purple
           input[type="submit"]
             display: block
             margin: 0 auto
-            background: url($images_path+"submit_back_icon25x22.png") 20px center no-repeat $light_green
+            background: $gray-purple
             width: 245px
             height: 55px
             border: none
-            text-indent: 30px
             +border-radius(10px)
             +transition(all, 0.5s)
             text-transform: uppercase
             font-family: "Lato"
-            font-weight: bold
-            font-size: 15px
+            font-size: 12px
             color: white
             &:hover
               +box-shadow(rgba(black, 0.3) 0 0 4px inset)
@@ -545,16 +545,16 @@
           float: left
           padding-bottom: 15px
           a
-            color: $ultra_gryn
+            color: $gray-purple
             text-decoration: none
             &:hover
-              color: $pink
+              color: $purple
           h3
             background: url($images_path+"profile_icon19x14.png") left 4px no-repeat
-            color: $ultra_gryn
+            color: $gray-purple
             font-family: "Lato"
             font-weight: 700
-            font-size: 18px
+            font-size: 16px
             padding-left: 30px
             display: block
             padding-bottom: 25px
@@ -575,14 +575,14 @@
                 font-family: "Lato"
                 font-weight: 700
                 font-size: 14px
-                color: $pink
+                color: $gray-purple
                 text-decoration: none
                 &:hover
                   text-decoration: underline
             p
               font-family: Arial
               font-size: 12px
-              color: $ultra_gryn
+              color: $gray-purple
               line-height: 140%
             #bio
               +grid(5)
@@ -631,7 +631,7 @@
           width: 70px
       .bootstrap-twitter
         a
-          color: $pink
+          color: $dark-purple
         p
           font-family: "Lato"
           font-style: italic
@@ -667,7 +667,7 @@
         textarea, input[type='text']
           width: 70%
         label
-          color: $pink
+          color: $dark-purple
           float: left
           font-family: "Lato"
           font-style: italic
@@ -698,11 +698,11 @@
           padding: 0
           margin: 0
           .btn
-            border: solid 1px $darker_pink
+            border: solid 1px $dark-purple
             color: white
             display: block
             font-family: "Lato"
-            text-shadow: 1px 1px $darker_pink
+            text-shadow: 1px 1px $dark-purple
             font-size: 12px
             height: 46px
             padding: 0 15px 0 45px
@@ -711,9 +711,9 @@
             margin-right: 10px
             float: right
             +border-radius (10px)
-            background: $pink url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
+            background: $dark-purple url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
             &:hover
-              background-color: $darker_pink
+              background-color: $gray-purple
     #project_posts
       p
         margin-top: 10px
@@ -754,11 +754,11 @@
         padding: 0
         margin: 0
         .btn
-          border: solid 1px $darker_pink
+          border: solid 1px $dark-purple
           color: white
           display: block
           font-family: "Lato"
-          text-shadow: 1px 1px $darker_pink
+          text-shadow: 1px 1px $dark-purple
           font-size: 12px
           height: 46px
           padding: 0 15px 0 45px
@@ -767,9 +767,9 @@
           margin-right: 10px
           float: left
           +border-radius (10px)
-          background: $pink url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
+          background: $dark-purple url($images_path+"icon_refreshproject.png") 10px 9px no-repeat
           &:hover
-            background-color: $darker_pink
+            background-color: $gray-purple
     #formatting_tips
       padding: 10px
       background: #F7F7F7
@@ -795,7 +795,7 @@
         margin-top: 10px
         padding-bottom: 10px
       a
-        color: $pink
+        color: $dark-purple
         text-decoration: none
         &:hover
           text-decoration: underline
