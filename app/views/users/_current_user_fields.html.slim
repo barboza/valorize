@@ -100,11 +100,11 @@
             p= f.submit 'OK', class: 'btn', id: 'password_submit'
 #deactivate.user_data
   h1= t('.deactivate')
+  span.hint= t('.deactivate_hint').html_safe
   ul
     li
       .bootstrap-form
         = form_for(@user, html: { method: :delete }) do |f|
-          span.hint= t('.deactivate_hint').html_safe
           br
           br
           .bootstrap-twitter

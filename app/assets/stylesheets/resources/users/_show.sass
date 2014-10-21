@@ -36,13 +36,13 @@
         +grid(9)
         +omega
         h1
-          color: $ultra_gryn
+          color: $dark-purple
           font-size: 28px
           font-family: 'Lato'
           font-weight: 700
           padding: 4px 0 10px
         h4
-          color: $ultra_gryn
+          color: $gray-purple
           font-size: 16px
           font-family: Arial
           line-height: 140%
@@ -96,52 +96,45 @@
       +omega
       display: none
 
-    #user_credits
-      +grid(16)
-      +omega
-      display: none
-      .current_credits
-        p
-          font-size: 24px
-          font-family: Lato
-          font-weight: 700
-          color: $ultra_gryn
-          padding-bottom: 5px
-      #current_credits
-        color: $light_green
-      .table_title
-        font-family: Lato
-        font-size: 20px
-        color: $dark_green
-        padding-top: 14px
-        padding-bottom: 10px
-      .table_content
-        th
-          font-family: Lato
-          font-weight: bold
-          font-size: 16px
-        td
-          font-family: Lato
-          font-size: 14px
-          a
-            text-decoration: none
-            color: $blue
-            +transition(all, 0.5s)
-            &:hover
-              color: $pink
   #social_info
     margin-top: 20px
+  .bootstrap-twitter
+    .btn
+      background-color: #F5F5F5
+      background-repeat: repeat-x
+      border-color: #CCCCCC #CCCCCC #B3B3B3
+      +border-radius (8px)
+      border-style: solid
+      border-width: 1px
+      color: #666666
+      cursor: pointer
+      display: inline-block
+      font-size: 13px
+      font-weight: bold
+      line-height: 22px
+      margin-bottom: 0
+      padding: 4px 10px
+      text-align: center
+      vertical-align: middle
   .user_data
+    input, textarea
+      border-color: $blue-bell
+      border-radius: 10px
     h1
-      color: #333333
+      color: $dark-purple
       font-family: Lato
-      font-style: italic
       font-size: 24px
-      margin-top: 20px
+      font-weight: 700
+      margin: 20px 0
       letter-spacing: -1px
+    .hint
+      font-size: 0.95em
+      font-style: normal
+      font-weight: lighter
+      margin-top: 20px !important
     ul
       padding-top: 20px
-      border-bottom: 1px dotted #ccc
+      border-bottom: 1px solid $blue-bell
       font-family: Lato
       li
         font-family: Lato
@@ -155,23 +148,6 @@
         .disabled
           color: gray
         form
-          .bootstrap-twitter
-            .btn
-              background-color: #F5F5F5
-              background-repeat: repeat-x
-              border-color: #CCCCCC #CCCCCC #B3B3B3
-              +border-radius (4px)
-              border-style: solid
-              border-width: 1px
-              color: #333333
-              cursor: pointer
-              display: inline-block
-              font-size: 13px
-              line-height: 18px
-              margin-bottom: 0
-              padding: 4px 10px
-              text-align: center
-              vertical-align: middle
           .div
             float: left
             width: 230px
@@ -264,7 +240,7 @@
             font-size: 14px
             line-height: 18px
             a
-              color: #99c7d9
+              color: $blue-bell
               text-decoration: none
               font-family: Lato
               +transition(all, 0.5s)
@@ -277,9 +253,13 @@
               float: left
   #change_password
     ul
-      .hint
-        padding: 0px!important
-        margin-bottom: 15px
-        display: block
       .btn
         margin-top: 23px
+
+  #user_unsubscribes
+    input
+      float: left
+      margin-right: 5px
+
+    label
+      font-weight: lighter

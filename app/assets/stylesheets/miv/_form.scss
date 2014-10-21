@@ -41,6 +41,7 @@
     display: block;
     margin-bottom: 5px;
     color: #333333;
+    font-weight: bold;
   }
   input,
   textarea,
@@ -618,8 +619,8 @@
     color: $red;
   }
 
-  .field_with_errors input, 
-  .field_with_errors select, 
+  .field_with_errors input,
+  .field_with_errors select,
   .field_with_errors textarea, {
     border-color: $red
   }
