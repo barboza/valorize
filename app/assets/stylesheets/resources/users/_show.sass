@@ -96,41 +96,26 @@
       +omega
       display: none
 
-    #user_credits
-      +grid(16)
-      +omega
-      display: none
-      .current_credits
-        p
-          font-size: 24px
-          font-family: Lato
-          font-weight: 700
-          color: $ultra_gryn
-          padding-bottom: 5px
-      #current_credits
-        color: $light_green
-      .table_title
-        font-family: Lato
-        font-size: 20px
-        color: $dark_green
-        padding-top: 14px
-        padding-bottom: 10px
-      .table_content
-        th
-          font-family: Lato
-          font-weight: bold
-          font-size: 16px
-        td
-          font-family: Lato
-          font-size: 14px
-          a
-            text-decoration: none
-            color: $blue
-            +transition(all, 0.5s)
-            &:hover
-              color: $pink
   #social_info
     margin-top: 20px
+  .bootstrap-twitter
+    .btn
+      background-color: #F5F5F5
+      background-repeat: repeat-x
+      border-color: #CCCCCC #CCCCCC #B3B3B3
+      +border-radius (8px)
+      border-style: solid
+      border-width: 1px
+      color: #666666
+      cursor: pointer
+      display: inline-block
+      font-size: 13px
+      font-weight: bold
+      line-height: 22px
+      margin-bottom: 0
+      padding: 4px 10px
+      text-align: center
+      vertical-align: middle
   .user_data
     input, textarea
       border-color: $blue-bell
@@ -163,24 +148,6 @@
         .disabled
           color: gray
         form
-          .bootstrap-twitter
-            .btn
-              background-color: #F5F5F5
-              background-repeat: repeat-x
-              border-color: #CCCCCC #CCCCCC #B3B3B3
-              +border-radius (8px)
-              border-style: solid
-              border-width: 1px
-              color: #666666
-              cursor: pointer
-              display: inline-block
-              font-size: 13px
-              font-weight: bold
-              line-height: 22px
-              margin-bottom: 0
-              padding: 4px 10px
-              text-align: center
-              vertical-align: middle
           .div
             float: left
             width: 230px
@@ -288,3 +255,11 @@
     ul
       .btn
         margin-top: 23px
+
+  #user_unsubscribes
+    input
+      float: left
+      margin-right: 5px
+
+    label
+      font-weight: lighter
