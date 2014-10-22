@@ -10,7 +10,7 @@
           width: 600px
           padding-bottom: 40px
           h1
-            color: $ultra_gryn
+            color: $dark-purple
             font-family: "Lato"
             font-weight: 700
             font-size: 24px
@@ -19,8 +19,10 @@
             color: #333333
             font-family: "Lato"
             font-size: 14px
+            font-weight: lighter
+            margin-top: 0.5em
             padding-bottom: 20px
-            border-bottom: 1px dotted #CCCCCC
+            border-bottom: 1px solid $blue-bell
         #contribute_options
           +grid(11)
           +alpha
@@ -31,7 +33,7 @@
               width: 30px
               margin-top: -55px
               p
-                color: #6BB444
+                color: $blue-bell
                 font-family: "Lato"
                 font-size: 28px
             .inline-hints
@@ -47,7 +49,7 @@
               font-family: "Lato"
               font-size: 18px
               display: block
-              color: #333333
+              color: $dark-purple
               margin-bottom: 12px
             input[type="text"]
               height: 55px
@@ -78,13 +80,13 @@
               padding-left: 0 !important
               legend
                 float: left
-                border-bottom: dotted 1px #ccc
+                border-bottom: solid 1px $blue-bell
                 margin-top: 40px
                 background: url($images_path+'gift.png') 10px top no-repeat
                 label
                   padding-left: 50px
                   font-family: 'Lato'
-                  color: $ultra_gryn
+                  color: $dark-purple
                   font-size: 22px
                   padding-top: 7px
                   margin-bottom: 12px
@@ -95,7 +97,7 @@
                   margin-bottom: 25px
                   margin-right: 10px
                   @include border-radius(10px)
-                  border: solid 1px #ccc
+                  border: solid 1px $light-purple
                   width: 500px
                   background: #FCFCFC
                   float: right
@@ -107,16 +109,18 @@
                       margin-top: 12px
                       float: left
                   &.selected
-                    background: rgba($light_green, 0.2)
+                    background: $light-purple
                   .reward_minimum_value
-                    color: #666666
+                    color: $dark-purple
                     font-family: 'Lato'
                     font-size: 24px
+                    font-weight: lighter
                     padding-bottom: 5px
                   .reward_description
                     font-family: 'Lato'
                     font-size: 14px
                     line-height: 18px
+                    font-weight: lighter
             #contribution_credits_input
               .inline-hints
                 float: none
@@ -127,14 +131,14 @@
               font-size: 14px
               label
                 font-size: 16px
-                color: #333
+                color: $dark-purple
                 font-family: 'Lato'
                 font-weight: 700
                 float: right
                 padding: 15px 16px
                 width: 510px
                 margin-right: 10px
-                background: #e0f5e0
+                background: $light-purple
                 @include border-radius(10px)
               input
                 display: inline
@@ -169,7 +173,7 @@
           float: none
           border: none
           display: block
-          background: #64CB64
+          background: $gray-purple
           font-family: "Lato"
           font-size: 15px
           text-transform: uppercase
@@ -185,31 +189,32 @@
             font-size: 18px
             margin-bottom: 15px
             a
-              color: black
+              color: $dark-purple
               text-decoration: none
               @include transition(all, 0.5s)
               &:hover
-                color: $pink
+                color: $blue-bell
           .project_owner
             padding-top: 12px
             padding-bottom: 8px
             font-family: 'Lato'
             font-size: 14px
             a
-              color: $pink
+              color: $dark-purple
               text-decoration: none
               @include transition(all, 0.5s)
               &:hover
-                color: black
+                color: $blue-bell
           .project_expires_at
             font-family: 'Lato'
             font-size: 14px
+            text-transform: capitalize
             padding-bottom: 20px
         .back_faq
           margin-bottom: 20px
           h2
-            border-bottom: 1px dotted #CCCCCC
-            color: #333333
+            border-bottom: 1px solid $blue-bell
+            color: $dark-purple
             font-family: "Lato"
             font-size: 22px
             margin-bottom: 20px
@@ -221,7 +226,7 @@
             font-weight: 700
             font-size: 14px
             padding-bottom: 15px
-            color: #333333
+            color: $dark-purple
             text-decoration: none
             cursor: pointer
             line-height: 21px
@@ -229,7 +234,7 @@
             @include transition(all, 0.5s)
             background: url($images_path+'bullet-green.png') left 5px no-repeat
             &:hover
-              color: #64CB64
+              color: $blue-bell
           p
             padding-bottom: 30px
             font-family: Arial
@@ -237,6 +242,3 @@
             font-size: 12px
             padding-left: 17px
             color: rgba(black, 0.6)
-            a
-            &:hover
-              color: #64CB64
