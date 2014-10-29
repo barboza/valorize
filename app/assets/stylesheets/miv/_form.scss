@@ -40,7 +40,7 @@
   label {
     display: block;
     margin-bottom: 5px;
-    color: #333333;
+    color: $gray-purple;
     font-weight: bold;
   }
   input,
@@ -55,10 +55,10 @@
     font-size: 13px;
     line-height: 18px;
     color: #555555;
-    border: 1px solid #cccccc;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    border: 1px solid $purple;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
   }
   .uneditable-textarea {
     width: auto;

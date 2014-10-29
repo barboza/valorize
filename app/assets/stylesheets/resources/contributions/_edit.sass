@@ -3,8 +3,6 @@
     width: 100%
   #catarse_moip_form
     overflow: hidden
-  //input.error
-    //border: 1px solid rgba(#ff0033, 0.5)
   p.error_msg
     margin-top: 9px !important
   p.subtitle
@@ -31,8 +29,8 @@
           width: 30px
     .list_payment
       width: 100%
-      border-top: 1px dotted #ddd
-      border-bottom: 1px dotted #ddd
+      border-top: 1px dotted $purple
+      border-bottom: 1px dotted $purple
       height: 88px
       margin-left: 0px
       margin-top: 40px
@@ -67,7 +65,7 @@
         text-indent: 239px
         margin-right: 0px
     h3
-      color: #666666
+      color: $dark-purple
       float: left
       font-family: "Lato"
       font-weight: bold
@@ -91,12 +89,12 @@
         .owner_outside, .infocard_outside
           width: 415px
           float: left
-          border: 1px solid #DFDFDF
+          border: 0
           .owner, .infocard
-            background: #F4F4F4
+            background: $light-purple
             width: 413px
             float: left
-            border: 1px solid white
+            border: 0
             .inputs
               margin-top: 20px
               width: 91%
@@ -117,6 +115,8 @@
                 &.phone, &.date
                   margin-left: 20px
                 label
+                  color: $gray-purple
+                  font-weight: normal
                   font-family: "Lato"
                   margin-bottom: 5px
                   margin-top: 0px
@@ -143,13 +143,13 @@
           padding-top: 40px
           padding-bottom: 30px
           h1
-            color: $ultra_gryn
+            color: $gray-purple
             font-family: "Lato"
             font-weight: 700
             font-size: 24px
             padding: 5px 0
           h2
-            color: #333333
+            color: $gray-purple
             font-family: "Lato"
             font-size: 14px
             padding-bottom: 15px
@@ -163,7 +163,7 @@
           h1
             float: left
             width: 650px
-            color: #333
+            color: $dark-purple
             font-family: 'Lato'
             font-weight: 700
             font-size: 24px
@@ -171,7 +171,7 @@
             padding-bottom: 30px
             padding-top: 10px
             a
-              color: #6BB444
+              color: $gray-purple
               text-decoration: none
           #review_text
             padding-right: 20px
@@ -184,6 +184,7 @@
               width: 265px
               float: left
               margin-top: 20px
+              color: $gray-purple
               strong
                 font-size: 18px
                 color: black
@@ -196,8 +197,8 @@
               line-height: 21px
               padding: 20px 20px 40px 60px
               width: 280px
-              color: #333
-              background: url($images_path+'gift-reward.png') left top no-repeat #F0F0F0
+              color: $dark-purple
+              background: url($images_path+'gift-reward.png') left top no-repeat $light-purple
         #credits_notice
           font-family: 'Lato'
           font-size: 16px
@@ -275,7 +276,7 @@
             &#user_address_state_input
               margin-bottom: 20px
           abbr
-            color: #6BB444
+            color: inherit
           .submit
             .accept_terms
               margin-top: 20px
@@ -287,7 +288,7 @@
               .inline
                 font-family: 'Lato'
                 a
-                  color: #6BB444
+                  color: $blue-bell
                   text-decoration: none
                   &:hover
                     text-decoration: underline
@@ -296,8 +297,10 @@
           margin-bottom:  20px
           nav
             a
-              background: #6BB544
+              background: $blue-bell
+              color: $light-purple
               &.selected
+                color: $blue-bell
                 background: white
 
         .payment
@@ -376,13 +379,13 @@
         input[type="submit"], button
           width: 190px
           height: 40px
-          border-radius: 15px
+          border-radius: 10px
           @include box-shadow(0px)
           margin: 12px auto 0px
           float: none
           border: none
           display: block
-          background: #64CB64
+          background: $gray-purple
           color: white
           font-family: "Lato"
           font-size: 15px
