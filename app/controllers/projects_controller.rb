@@ -1,6 +1,6 @@
 # coding: utf-8
 class ProjectsController < ApplicationController
-  after_filter :verify_authorized, except: %i[index video video_embed embed embed_panel]
+  after_filter :verify_authorized, except: %i[index video video_embed embed embed_panel start]
   inherit_resources
   has_scope :pg_search, :by_category_id, :near_of
   has_scope :recent, :expiring, :successful, :in_funding, :recommended, :not_expired, type: :boolean
@@ -99,6 +99,10 @@ class ProjectsController < ApplicationController
     render layout: false
   end
 
+  def start
+    render 'pages/start'
+  end
+
   protected
 
   def permitted_params
@@ -112,4 +116,4 @@ class ProjectsController < ApplicationController
   def use_catarse_boostrap
     action_name == "new" || action_name == "create" ? 'catarse_bootstrap' : 'application'
   end
-end
+ end

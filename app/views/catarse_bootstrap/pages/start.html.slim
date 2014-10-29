@@ -1,68 +1,55 @@
-- content_for :main_stylesheet, :webflow
 - content_for :title, t('.page-title')
 
-= render 'shared/header_big'
-= render 'shared/feedback'
+#page_content
+  .build-your-project
+    .section-header
+      .content
+        h1 = t('.build')
+        p = t('.build_description')
+    .strip
+      .section
+        .content
+          ul
+            li 
+              p = t('.strip.first')
+            li 
+              p = t('.strip.second')
+            li  
+              p = t('.strip.third')
+            li 
+              p = t('.strip.fourth')
+            li 
+              p = t('.strip.fifth')
+    .info
+      .content
+        p = t('.send_project_info')
+        = link_to t('.more_about_first_steps'), '#'
+  .info-blocks
+    .motivate
+      .content
+        h1 = t('.motivate.title')
+        p = t('.motivate.content1')
+        p = t('.motivate.content2')
+        p = t('.motivate.content3')
+        = link_to t('.motivate.link')
+    .commit
+      .content
+        h1 = t('.commit.title')
+        p = t('.commit.content')
+        = link_to t('.commit.link')
+    .all-or-nothing
+      .content
+        h1 = t('.all_or_nothing.title')
+        p = t('.all_or_nothing.content')
+        = link_to t('.all_or_nothing.link')
+    .accounting
+      .content
+        h1 = t('.accounting.title')
+        p = t('.accounting.content')
+        = link_to t('.accounting.link')
 
-.page-header
-  .w-container.no-responsive
-    h1.headingcenter-middle = t('.title')
 
-    - statistics = Statistics.first
-    .w-row.stats-send-project
-      .w-col.w-col-4.column-stats-submit
-        p.big-number = number_to_human(statistics.total_contributors)
-        p.prg1.sub-description = t('.header.people')
-      .w-col.w-col-4.column-stats-submit
-        p.big-number = number_to_human(statistics.total_projects_success)
-        p.prg1.sub-description = t('.header.success')
-      .w-col.w-col-4.column-stats-submit
-        p.big-number = number_to_human(statistics.total_contributed)
-        p.prg1.sub-description = t('.header.money')
 
-    .w-row
-      .w-col.w-col-8.w-col-push-2.bt-center-header
-        = link_to t('.learn-more'), '#learn', class: 'button bt-medium bt-aprenda'
-        span = "ou"
-        = link_to t('.submit'), new_project_path, class: 'button bt-medium bt-rascunhooff'
+  .bootstrap-twitter
+    = link_to t('.submit'), new_project_path, class: 'btn'
 
-#learn
-  .w-container.no-responsive
-    .w-row.row-infosline
-      .w-col.w-col-6.column-images-center
-        = image_tag "catarse_bootstrap/how-it-works/inscreva-seu-projeto.png", class: "img-envie-01"
-      .w-col.w-col-6
-        h2 = t('.start.title')
-        p.prg1 = t('.start.content')
-        = link_to t('.start.link'), 'http://suporte.catarse.me/hc/pt-br/sections/200406978-Realizadores-Primeiros-passos', class: "alt-link", target: '_blank'
-
-    .w-row.row-infosline
-      .w-col.w-col-6
-        h2 = t('.people.title')
-        p.prg1 = t('.people.content')
-        = link_to t('.people.link'), 'http://blog.catarse.me/quantos-apoiadores-eu-preciso-para-alcancar-a-meta-do-meu-projeto/', class: 'alt-link', target: '_blank'
-
-      .w-col.w-col-6.column-images-center
-        = image_tag "catarse_bootstrap/how-it-works/mobilze-interessados.png", class: "img-envie-02"
-
-    .w-row.row-infosline
-      .w-col.w-col-6.column-images-center
-        = image_tag "catarse_bootstrap/how-it-works/trabalhe-muito.png", class: "img-envie-03"
-      .w-col.w-col-6
-        h2 = t('.work.title')
-        p.prg1 = t('.work.content')
-        = link_to t('.work.link'), 'http://blog.catarse.me/category/dicas/', class: 'alt-link', target: '_blank'
-
-    .w-row.row-infosline
-      .w-col.w-col-6
-        h2 = t('.time.title')
-        p.prg1 = t('.time.content')
-        = link_to t('.time.link'), 'http://blog.catarse.me/nossa-taxa-de-servico-parte-1-de-onde-vem-e-pra-onde-vai-o-dinheiro-do-catarse/', class: 'alt-link', target: '_blank'
-      .w-col.w-col-6.column-images-center
-        = image_tag "catarse_bootstrap/how-it-works/tudo-ou-nada.png", class: "img-envie-04"
-
-    .w-row
-      .w-col.w-col-4.w-col-push-4
-        = link_to t('.submit'), new_project_path, class: 'button action submit'
-
-= render 'shared/footer_big'

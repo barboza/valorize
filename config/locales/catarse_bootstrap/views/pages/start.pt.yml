@@ -1,28 +1,34 @@
 pt:
   pages:
     start:
-      page-title: "Como funciona o Catarse?"
-      title: "Viabilize seu projeto coletivamente"
-      submit: "Comece seu projeto"
-      learn-more: "Aprenda mais"
-      header:
-        people: "Pessoas já apoiaram pelo menos 01 projeto no Catarse"
-        success: "Projetos já foram bem sucedidos por aqui"
-        money: "Foram investidos em ideias publicadas no Catarse"
-      start:
-        title: "Comece seu projeto"
-        content: "Comece o rascunho do seu projeto agora! Você pode levar o tempo que quiser para fazer o vídeo da campanha de arrecadação, bolar recompensas atrativas, calcular o orçamento e traçar estratégias de comunicação e engajamento do público. Quando sentir que o projeto está bem formatado, mande para nossa equipe e receba dicas para aumentar suas chances de sucesso."
-        link: "Saiba mais sobre os primeiros passos de um projeto"
-      people:
-        title: "Mobilize interessados"
-        content: "Pelo menos 50% dos apoiadores virá da sua própria rede de contatos. O Catarse é uma forma de você se aproximar das pessoas que gostam do seu trabalho e expandir essa rede. Muitas das pessoas apoiam projetos pela relação com o realizador, outros pela admiração do trabalho e outras para receber uma recompensa única, mas a principal razão é a identificação com a proposta do projeto."
-        link: 'Saiba quantos apoiadores você precisará mobilizar'
-      work:
-        title: "Trabalhe muito no antes, durante e depois do período de arrecadação"
-        content: "Estude projetos semelhantes ao seu. Mapeie, analise, expanda e prepare a sua rede e outras comunidades que possam se interessar pela realização da sua ideia. Planeje cada dia da sua campanha e execute ações para conquistar mais apoiadores. Explique por que está pedindo o dinheiro e como vai usá-lo. Comunique-se o tempo inteiro com os apoiadores do seu projeto. Execute e entregue as recompensas dentro do prazo estabelecido."
-        link: 'Receba dicas de campanhas de sucesso no Catarse'
-      time:
-        title: "Tudo ou nada"
-        content: "Você pode escolher um prazo entre 1 e 60 dias para alcançar o objetivo de arrecadação, no sistema que chamamos de Tudo ou Nada. Quando um projeto alcança a meta de arrecadação, o Catarse fica com 13% desse valor. Se o projeto não alcança o objetivo de arrecadação, não cobramos nada e devolvemos o dinheiro aos apoiadores."
-        link: 'Saiba como nossa taxa ajuda a manter o Catarse'
-        
+      page-title: Como funciona o Valorize Me
+      build: Construa seu projeto
+      build_description: 'Seu projeto fará o maior sucesso! Construa com sua equipe as cinco etapas a seguir:'
+      strip:
+        first: Elabore um vídeo de apresentação do projeto, seja natural, diga o que você quer e lembre-se, este é o video da campanha de arrecadação;
+        second: Pense em recompensas bem legais para os investidores;
+        third: Crie estratégias de divulgação e adesão do público;
+        fourth: Construa um orçamento, não se esqueça de nenhum detalhe;
+        fifth: Lembre-se, no final apresente os resultados alcançados
+      send_project_info: Por fim, envie seu projeto para nossa equipe, que poderá ajuda-lo com dicas para alcançar o sucesso.
+      more_about_first_steps: Saiba mais sobre os primeiros passos de um projeto
+      motivate:
+        title: Motive investidores
+        content1: Um bom percentual dos investidores já está na sua própria rede de contatos.
+        content2: A Valorize é uma forma de aproximar estas pessoas e aproximar outras a conhecerem o seu projeto. Muitos investidores apóiam por ter uma relação com o dirigente, outros pela simpatia ao trabalho e ainda outros para receberem a recompensa diferenciada.
+        content3: Mas a maior razão é a afinidade com a proposta do projeto.
+        link: Saiba quantos apoiadores você precisa motivar.
+      commit:
+        title: Dedique-se em todas as fases do projeto
+        content: Analise projetos parecidos com o seu. Busque atingir todo o seu potencial na divulgação e em pessoas que se identifiquem e se interessem pela realização de sua proposta. Comece a divulgar seu projeto a partir de agora. Converse com as pessoas que você acredita que serão seus potenciais investidores. A vantagem é que, ao envolve-las neste início do processo você terá um nível de engajamento ainda maior e já terá uma rede de potenciais apoiadores antes mesmo de publicar o projeto. Avalie todos os dias sua campanha. E no final entregue as recompensas como planejado.
+        link: Receba dicas de campanha de sucesso no Valorize
+      all_or_nothing:
+        title: Tudo ou Nada
+        content: O projeto ficará online na plataforma para busca de doadores no prazo entre 15 e 60 dias, conforme sua escolha. Se o projeto alcançar a meta de arrecadação a valorize fica com 13% deste valor (para a operadora financeira e comissão da Valorize). Se o projeto não atingir 100%, não cobramos nada e devolvemos o dinheiro aos doadores, como planejado.
+        link: Saiba como nossa taxa ajuda a manter o Valorize
+      accounting:
+        title: Prestando contas
+        content: prestar contas é fundamental, além de ser um dever para com o doador é uma forma de dar credibilidade para o seu projeto. E não é necessário aguardar o final do periodo de captação para prestar contas, você pode e deve informar no decorrer da campanha todas as etapas que estão acontecendo.
+        link: ??
+      submit: COMECE SEU PROJETO
+
