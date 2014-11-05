@@ -46,6 +46,7 @@ gem 'draper'
 gem 'slim-rails'
 gem 'jquery-rails'
 gem 'browser'
+gem "slick_rails"
 
 # Static pages
 gem 'high_voltage'

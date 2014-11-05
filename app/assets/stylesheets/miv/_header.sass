@@ -6,12 +6,24 @@ $orange: #F69219
   margin: 0 auto
   width: 980px
 
+.rainbow
+  height: 4px
+  width: 100%
+  +background-image(linear-gradient(left, #ED1C24 14%, #F7931E 28%, #FFFF00 42%, #009245 56%, #00A99D 70%, #662D91 84%))
+  position: fixed
+  top: 111px
+
+#main_content
+  margin-top: 115px
+
 .header
+  z-index: 2
+  position: fixed
+  top: 0px
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif
   display: inline-block
   width: 100%
   background: #fff
-  border-bottom: 1px solid $border-gray
   .logo
     background: url("/assets/valorizeme_bootstrap/logo_valorizeme_header.png")
     display: block

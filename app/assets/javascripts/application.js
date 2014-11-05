@@ -22,5 +22,6 @@
 //= require ./lib/jquery.sticky.js
 //= require_tree ./lib
 //= require_tree ./app
+//= require slick
 
 
