@@ -1,8 +1,8 @@
 .main-header
   .w-row
-    .w-col.w-col-2.w-col-small-4.w-col-tiny-4
+    .w-col.w-col-3.w-col-small-4.w-col-tiny-4
       = link_to (image_tag "valorizeme_bootstrap/logo_valorizeme_header.png"), root_url(host: CatarseSettings[:base_domain] || request.domain), class: 'header-logo', :title => CatarseSettings[:company_name]
-    .header-nav.w-col.w-col-10.w-col-small-8.w-col-tiny-8
+    .header-nav.w-col.w-col-9.w-col-small-8.w-col-tiny-8
       = link_to t('layouts.header.discover'), explore_path, class: 'header-link left-side no-mobile'
 
       = link_to t('layouts.header.submit'), start_path, class: 'header-link left-side no-mobile'
