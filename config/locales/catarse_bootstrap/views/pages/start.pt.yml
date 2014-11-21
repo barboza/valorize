@@ -1,7 +1,7 @@
 pt:
   pages:
     start:
-      page-title: Como funciona o Valorize Me
+      page-title: Como funciona o Valorize-me
       build: Construa seu projeto
       build_description: 'Seu projeto fará o maior sucesso! Construa com sua equipe as cinco etapas a seguir:'
       strip:
@@ -15,20 +15,20 @@ pt:
       motivate:
         title: Motive investidores
         content1: Um bom percentual dos investidores já está na sua própria rede de contatos.
-        content2: A Valorize é uma forma de aproximar estas pessoas e aproximar outras a conhecerem o seu projeto. Muitos investidores apóiam por ter uma relação com o dirigente, outros pela simpatia ao trabalho e ainda outros para receberem a recompensa diferenciada.
+        content2: A Valorize-me é uma forma de aproximar estas pessoas e aproximar outras a conhecerem o seu projeto. Muitos investidores apóiam por ter uma relação com o dirigente, outros pela simpatia ao trabalho e ainda outros para receberem a recompensa diferenciada.
         content3: Mas a maior razão é a afinidade com a proposta do projeto.
         link: Saiba quantos apoiadores você precisa motivar.
       commit:
         title: Dedique-se em todas as fases do projeto
         content: Analise projetos parecidos com o seu. Busque atingir todo o seu potencial na divulgação e em pessoas que se identifiquem e se interessem pela realização de sua proposta. Comece a divulgar seu projeto a partir de agora. Converse com as pessoas que você acredita que serão seus potenciais investidores. A vantagem é que, ao envolve-las neste início do processo você terá um nível de engajamento ainda maior e já terá uma rede de potenciais apoiadores antes mesmo de publicar o projeto. Avalie todos os dias sua campanha. E no final entregue as recompensas como planejado.
-        link: Receba dicas de campanha de sucesso no Valorize
+        link: Receba dicas de campanha de sucesso no Valorize-me
       all_or_nothing:
         title: Tudo ou Nada
-        content: O projeto ficará online na plataforma para busca de doadores no prazo entre 15 e 60 dias, conforme sua escolha. Se o projeto alcançar a meta de arrecadação a valorize fica com 13% deste valor (para a operadora financeira e comissão da Valorize). Se o projeto não atingir 100%, não cobramos nada e devolvemos o dinheiro aos doadores, como planejado.
-        link: Saiba como nossa taxa ajuda a manter o Valorize
+        content: O projeto ficará online na plataforma para busca de doadores no prazo entre 15 e 60 dias, conforme sua escolha. Se o projeto alcançar a meta de arrecadação a Valorize-me fica com 13% deste valor (para a operadora financeira e comissão da Valorize-me). Se o projeto não atingir 100%, não cobramos nada e devolvemos o dinheiro aos doadores, como planejado.
+        link: Saiba como nossa taxa ajuda a manter o Valorize-me
       accounting:
         title: Prestando contas
-        content: prestar contas é fundamental, além de ser um dever para com o doador é uma forma de dar credibilidade para o seu projeto. E não é necessário aguardar o final do periodo de captação para prestar contas, você pode e deve informar no decorrer da campanha todas as etapas que estão acontecendo.
+        content: Prestar contas é fundamental, além de ser um dever para com o doador é uma forma de dar credibilidade para o seu projeto. E não é necessário aguardar o final do periodo de captação para prestar contas, você pode e deve informar no decorrer da campanha todas as etapas que estão acontecendo.
         link: ??
       submit: COMECE SEU PROJETO
 
