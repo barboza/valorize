@@ -34,6 +34,9 @@ footer.footer
           = link_to "Follow @#{CatarseSettings[:twitter_username]}", "http://twitter.com/#{CatarseSettings[:twitter_username]}", :class => 'twitter-follow-button', :"data-button"=>"blue", :"data-text-color" => "#ffffff", :"data-link-color"=>"#fffffff", :"data-width" => "224px"
         .facebook-box
           = render_facebook_like colorscheme: "dark", width: "171"
+        .phone
+          b Telefone: 
+          | (48) XXXX-XXXX
 
       .engage
         = image_tag('valorizeme_bootstrap/engage.png')
