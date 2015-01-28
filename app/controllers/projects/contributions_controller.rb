@@ -77,20 +77,8 @@ class Projects::ContributionsController < ApplicationController
   end
 
   def avaiable_payment_engines
-    if enabled_to_use_pagarme.include?(parent.permalink)
-      engines = PaymentEngines.engines.select do |engine|
-        engine if engine.name == 'Pagarme'
-      end
-    else
-      engines = PaymentEngines.engines.inject([]) do |total, item|
-        if item.name == 'Credits' && current_user.credits > 0
-          total << item
-        elsif !item.name.match(/(Credits|Pagarme)/)
-          total << item
-        end
-
-        total
-      end
+    engines = PaymentEngines.engines.select do |engine|
+      engine if engine.name == 'Pagarme'
     end
 
     @engines ||= engines
